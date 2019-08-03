@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>html기본세팅</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+     body{
+       font-family:"나눔고딕";
+     }
+     .title{
+       height:50px;
+       font-weight:800;
+       font-size:50px;
+     }
+      fieldset{
+        height:300px;
+        padding-bottom:10px;
+      }
+      p{
+      text-indent:10px; /*들여쓰기*/
+
+      }
+      .li1{
+        font-weight:800;
+        font-size:x-large;
+        border-style:solid;
+        border-width:0 0 5px 0;
+        border-color:blue;
+      }
+      .c1{
+        text-indent:30px;
+      }
+      .c2{
+        text-indent:50px;
+      }
+      ul{list-style-type:square;}
+    </style>
+  </head>
+  <body>
+    <div class="title">For Feginner</div>
+<ol>
+<h2><li>HTML 이란?</li></h2>
+<p>HTML 이란, Hypertext Markup Language의 약자로, 웹페이지를 만들기 위해 필요한 언어이다. HTML은 쉽지만 중요한 파트이기 때문에 처음부터 꼼꼼히 보고 따라가야 한다. 저도 초보지만 같이 공부해요 :) </p>
+
+<p>웹은 퍼블릭 도메인(어떠한 저작권도 존재하지 않는 완전한 자유)이기 때문에 네이버, 구글, 다음 등이 각자의 브라우저를 만들 수 있고, 우리도 우리만의 사이트를 만들 수 있다.</p>
+
+<h2><li>HTML 기본 세팅</li></h2>
+
+<p>HTML을 작성하기 위한 개발 환경 세팅은 아래와 같다. 일단 아래대로 복붙을 하든 하나하나 쳐보든 이 코드를 프로젝트 파일에 작성하고 저장해보자. 무엇이든 써보는 게 중요하다. 나는 atom을 사용하고 있는데 html 을 치고 엔터를 누르면 자동으로 입력된다. 이 코드들이 어떤 의미를 담고 있는지는 3. 번에서 더 살펴보자.</p>
+
+<fieldset>
+  <legend>HTML기본세팅</legend>
+  &#60;!DOCTYPE html&#62;<br>
+  &#60;html&#62;<br>
+  <div class="c1">  &#60;head&#62;</div><br>
+      <div class="c2">&#60;meta charset="utf-8"&#62;</div><br>
+      <div class="c2">&#60;title&#62;&#60;/title&#62;</div><br>
+  <div class="c1">&#60;/head&#62;</div><br>
+
+  <div class="c1">  &#60;body&#62;</div><br>
+  <div class="c1">&#60;/body&#62;</div><br>
+&#60;/html&#62;<br>
+</fieldset>
+
+<h2><li>HTML 기본 세팅 코드 파헤치기</li></h2>
+  <ul>
+    <li class="li1">&#60;!DOCTYPE html&#62;</li>
+      ﻿<p>&#60;!DOCTYPE&#62; 선언은 HTML 태그가 아니다. 페이지가 쓰이는 언어가 HTML로 되어있다는 것을 웹 브라우저에 알려주는 것. <!DOCTYPE> 선언은 HTML 문서에서 <html> 태그보다 맨 앞에 있어야 한다.</p>
+    <li class="li1">&#60;﻿html&#62;</li>
+      <p>&#60;html&#62; 태그는 해당 프로젝트 파일에 적는 언어가 HTML로 되어 있음을 브라우저에 알리는 역할을 한다.</p>
+    <li class="li1">&#60;head&#62;</li>
+      <p>﻿title, scripts, styles, meta information 등의 문서에 직접 나타나지 않는 것들을 묶어주는 태그. &#60;style&#62; tag는 문서를 꾸며주는 역할을 하지만 &#60;style&#62; 태그에 입력한 코드가 직접 문서에 나타나지 않는다.</p>
+    <li class="li1">﻿&#60;meta charset="utf-8"&#62;</li>
+      <p>char - 문자 / set - 규칙 > "utf-8대로 문서를 읽어라"</p>
+      <p> &#60;meta&#62; 태그는 페이지에 표시되지 않지만 구문 분석이 가능하다. &#60;meta&#62; 태그는 항상 &#60;head&#62; 태그 안에 있어야 한다. 메타 요소는 일반적으로 페이지 설명, 키워드, 문서 작성자, 마지막으로 수정된 항목 및 기타 메타 데이터를 지정하는 데 사용된다. 메타 데이터는 브라우저 (내용 표시 또는 페이지 재로드), 검색 엔진 (키워드) 또는 기타 웹 서비스에서 사용할 수 있다고 함.﻿</p>
+    <li class="li1">﻿﻿&#60;title&#62;</li>
+    <p>﻿&#60;title&#62; 태그는 모든 HTML 문서에서 필요하며 문서의 제목을 정의할 때 사용한다. 크롬 브라우저의 경우 웹탭에 뜨는 홈페이지 관련 단어들이 &#60;title&#62;태그로 작성된 것이다.</p>
+    <li class="li1">﻿﻿&#60;body&#62;</li>
+    <p>﻿﻿﻿&#60;body&#62; 태그는 문서의 본문을 작성하는 것을 정의할 때 사용한다. 텍스트, 하이퍼 링크, 이미지, 표, 목록 등 웹 페이지에 직접 출력되는 것들을 &#60;body&#62;태그 안에 작성한다.</p>
+   </ul>
+﻿</ol>
+  </body>
+</html>
