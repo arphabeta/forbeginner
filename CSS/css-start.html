@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css-start</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    body{
+      font-family:"나눔고딕";
+    }
+    .title{
+      height:50px;
+      font-weight:800;
+      font-size:50px;
+    }
+     .fieldset1{
+       height:360px;
+       padding-bottom:10px;
+     }
+     p{
+     text-indent:10px; /*들여쓰기*/
+     }
+     .li1{
+       font-weight:800;
+       font-size:x-large;
+       border-style:solid;
+       border-width:0 0 5px 0;
+       border-color:blue;
+     }
+     .c1{
+       text-indent:30px;
+     }
+     .c2{
+       text-indent:50px;
+     }
+     ul{list-style-type:square;}
+    </style>
+  </head>
+  <body>
+
+    <h1>CSS (Cascading Style Sheets)</h1>
+    <h1>*CSS 개발환경 세팅하는 방법</h1>
+    <ol>
+    <p>CSS는 웹을 꾸밀 때 사용하는 언어다.</p>
+    <p>CSS는 &#60;head&#62;태그 속 &#60;style&#62;태그에 css를 적용한다. HTML에서 했던 것처럼 태그 내에 직접 폰트 색이나 문단 배열을 설정할 수 있지만, 간단한 웹을 만들 때도 수식이 길어지기 때문에 되도록이면 &#60;style&#62;tag를 사용하거나, CSS 페이지를 따로 만든 후 연결하는 것이 좋다.</p>
+
+    <h2><li>&#60;style&#62;태그를 사용하는 방법</li></h2>
+    <p>&#60;style&#62;태그를 사용하는 CSS의 기본 세팅은 아래와 같이 할 수 있다. 반드시 &#60;head&#62;안에 &#60;style&#62;태그를 작성해야 적용된다. &#60;body&#62;태그 안에 적힌 HTML 문법들을 꾸며주는 역할을 하기 때문에 꾸며주는 코드는 노출이 되면 곤란하므로 &#60;head&#62;부분에 넣는 것이다.
+
+    <fieldset class="fieldset1">
+      <legend>HTML기본세팅</legend>
+      &#60;!DOCTYPE html&#62;<br>
+        &#60;html&#62;<br>
+          <div class="c1">&#60;head&#62;</div><br>
+            <div class="c2">&#60;meta charset="utf-8"&#62;</div><br>
+            <div class="c2">&#60;title&#62;css&#60;/title&#62;</div><br>
+          <div class="c1">&#60;style&#62;</div><br>
+
+          <div class="c1">&#60;/style&#62;</div><br>
+          <div class="c1">&#60;/head&#62;</div><br>
+          <div class="c1">&#60;body&#62;</div><br>
+
+          <div class="c1">&#60;/body&#62;</div><br>
+        &#60;/html&#62;<br>
+    </fieldset>
+
+    <h2><li>CSS 페이지를 따로 만든 후 HTML 문서에 연결하는 방법</li></h2>
+    <ol>
+    <h3><li class="li1">프로젝트 파일을 아래 이름으로 2개 생성한다.</li></h3>
+
+    <p>파일 이름은 되도록 영어로 하는 것이 좋다. 브라우저마다 한글을 못 읽는 경우도 있기 때문에 파일명은 영어로, 띄어쓰기 없이 하는 것이 좋다.</p>
+    <p>-(하고 싶은 파일 이름).html</p>
+    <p>-(하고 싶은 파일 이름).css</p>
+
+    <h3><li class="li1">(하고 싶은 파일 이름).css 파일에 아래 코드를 작성한다.</li></h3>
+
+    <p>HTML 문서 세팅을 할 때 charset 은 &#60;meta charset="utf-8"&#62;로 작성했지만, CSS에서는 @charset "utf-8"; 로 작성해야 한다. 나도 아직은 잘 모르지만 컴퓨터 언어마다 코드를 하는 방식이 다르기 때문에 이런 점을 고려해서 모두 작성해야 한다고 한다. 나는 이걸 한국어는 문장을 마칠 때.(작은 점)을 쓰지만 일본어로는  。(크고 동그란 점)을 써야 하는 것과 비슷하다고 생각했다. 언어가 다르듯 글을 시작하고 마치는 방법, 비슷한 언어라도 단어(코드)를 읽고, 쓰는 방법이 다르다고 생각했다.</p>
+    <p>@charset "utf-8";  을 작성한 다음 줄부터 CSS 문법을 사용하여 자신이 꾸미고 싶은 부분에 대한 코드를 입력하면 된다.</p>
+    <fieldset>
+      <legend>(하고 싶은 파일 이름).css</legend>
+      @charset "utf-8";
+    </fieldset>
+
+    <h3><li class="li1">(하고 싶은 파일 이름).html 파일에 아래 코드를 입력한다.</li></h3>
+
+    <p>html 프로젝트 파일에 css 프로젝트 파일을 연결해주려면 &#60;head&#62;태그 안에 &#60;link&#62;를 사용하여 css 파일을 삽입해줘야 한다. 1. 번의 &#60;style&#62;태그를 &#60;head&#62;태그 안에 작성한 것과 동일한 이유이다. 연결하지 않은 채로 내버려 두면 서로 독립적인 파일로 존재하게 된다. 그럼 (하고 싶은 파일 이름).css 파일에 아무리 정성스럽고 길게 코드를 입력한다고 해도 css는 적용하려고 만든 html 문서에 적용되지 않는다.</p>
+    <p>&#60;head&#62;tag 안에 &#60;link&#62;tag를 삽입할 때, 아래 서식대로 입력을 해야 한다.</p>
+
+    <fieldset>
+      <legend>&#60;head&#62;tag 안에 &#60;link&#62;tag 삽입</legend>
+    &#60;link rel="stylesheet" href="하고싶은파일이름.css"&#62;
+    </fieldset>
+
+    <p>*link : 연결하겠다.</p>
+
+    <p>*relation : 연결한 이 프로젝트 파일은 스타일시트와 관련이 있다.</p>
+
+    <p>*href : 'h'ypertext + 'ref'erence (참조할 파일 이름) >> html 문법 중 하이퍼링크를 삽입하는 &#60;a&#62;태그에서 삽입할 링크를 집어넣을 때도 href 속성을 사용한다.</p>
+    </ol>
+    <h2><li>HTML 태그 안에 수식하는 방식 (거의 안 씀)</li></h2>
+     HTML 태그 안에 직접 sytle이라는 속성을 사용하여 CSS 문법을 입력하는 방식이다. 웹은 꾸밀게 넘치는데 이런 방식으로 꾸밀 경우 코드의 가독성이 떨어져 실무자들은 거의 사용하지 않는다고 한다.
+
+     <fieldset>
+       <legend>html 코드에 sytle 삽입하기</legend>
+       &#60;body style="background-color:#ffffff;"&#62;
+     </fieldset>
+
+
+  </ol>
+  </body>
+</html>
