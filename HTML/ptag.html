@@ -8,9 +8,28 @@
     body{
       font-family:"나눔고딕";
     }
+        .title{
+      height:50px;
+      font-weight:800;
+      font-size:50px;
+    }
+    .p{
+      font-weight:bold;
+      font-size:large;
+    }
+    img{
+      margin:20px 0;
+    }
+    h1{
+      border-style:solid;
+      border-width:0 0 5px 0;
+      border-color:blue;
+    }
+    
   </style>
 </head>
 <body>
+    <div class="title">For Feginner</div>
 <ol>
   <h1><li>&#60;p&#62;tag란?</li></h1>
   <p>﻿&#60;p&#62;태그는 paragraph(문단)을 의미한다. &#60;p&#62;태그 없이도 텍스트를 치면 페이지에 출력되지만 문단 들여쓰기나 문단 글씨 크기, 글자 간격 조정 등등을 할 때, 문단을 설정하고 스타일을 부여해야 하기 때문에 &#60;p&#62;tag를 사용해 주는 것이 좋다.</p>
@@ -23,6 +42,28 @@
     <legend>출력화면</legend>
     <p>This is a paragraph.</p>
   </fieldset>
+    <h1><li>&#60;p&#62;tag﻿를 써야하는 이유</li></h1>
+  <p>﻿원래 글자만 치더라도 웹 상에는 'This is a paragraph.' 문장은 출력된다. 하지만 왜 굳이 &#60;p&#62;태그를 써야하냐는 물음이 나에게도 있었다. 하지만 조금씩 코드를 배우고 나니 웹을 만드려면 일단 폰트와 폰트, 문단의 위치 등을 조절해야 한다는 사실을 깨달았다. 코드가 있는 이유는 웹을 만드는데에 필요하기 때문이란걸 요즘 깨닫고 있다.</p>
+  <h1><li>&#60;p&#62;,&#60;div&#62;,&#60;span&#62;﻿tag의 차이점</li></h1>
+  <p>﻿나중에 html 코드를 보다보면 이 &#60;p&#62;, &#60;div&#62;, &#60;span&#62;﻿ 태그가 뭐가 다른건지 의문을 품게될 때가 있다. 웹제작 수업 선생님께 여쭤보니 아래처럼 가르쳐주셨다. 궁금하셨던 분들은 참고하시면 좋을듯하다.﻿</p>
+
+  <ul>
+  <div class="p">
+  <li><span style="background-color:yellow">﻿&#60;p&#62; : 문단 분량의 content + 상하 margin이 있음</span>
+  </li></div>
+  <img src="K-026.jpg">
+  <div class="p">
+  <li><span style="background-color:yellow">﻿&#60;div&#62; : block level element (블록 라벨 엘리먼트) - 화면 전체 테두리를 쓰는 애들. content에 해당하는 &#60;div&#62;라는 텍스트가 행 전체를 차지하고 있다. ﻿</span>
+  </li></div>
+  <img src="K-027.jpg">
+  <div class="p">
+  <li><span style="background-color:yellow">&#60;span&#62; : inline element (인라인 엘리먼트) - 자기 content 만큼의 테두리를 쓰는 애들. content에 해당하는 &#60;span&#62;이라는 텍스트가 자기 만큼의 공간을 차지하는 것을 볼 수 있다.﻿</span>
+  </li></div>
+  <img src="K-028.jpg">
+  <p>﻿(아직 block level element, inline element 개념이 헷갈리는 분들은 아래 그림과 포스팅을 참고해주세요. 초반에는 몰라도 되지만 나중에는 꼭 알아야하는 개념입니다.)<br><br>
+  링크 : <a href="﻿https://blog.naver.com/juyoung1704/221555999289"﻿>https://blog.naver.com/juyoung1704/221555999289</a></p>
+  <a href="https://blog.naver.com/juyoung1704/221555999289"><img src="K-024.jpg"  height="60%" width="90%"></a>
+
 </ol>
 </body>
 </html>
