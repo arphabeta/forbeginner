@@ -1,0 +1,74 @@
+<!doctype>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>img삽입</title>
+  <style>
+    .title{
+      height:50px;
+      font-weight:800;
+      font-size:50px;
+    }
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width:400px;
+    }
+    h1{
+      border-style:solid;
+      border-width:0 0 5px 0;
+      border-color:blue;
+    }
+  </style>
+</head>
+<body>
+<div class="title">For Beginner</div>
+<ol>
+  <h1><li>&#60;img&#62;태그란?</li></h1>
+  <p>
+    &#60;img&#62;tag는 image를 줄여서 쓴 tag라고 할 수 있다. &#60;img&#62; 태그를 사용하여 웹페이지에 이미지를 삽입할 수 있다. &#60;img&#62;태그에는 src와 alt 라는 속성이 반드시 필요하다. &#60;img src=" " alt=" "&#62;이 형태로 쓰인다.<br>
+  </p><p>
+    src -> source. 이미지의 URL 혹은 파일 위치를 끌어올때 src속성에 넣어야 출력이 된다.
+    alt -> alternate text for an image. 흔히 엑박이라고 부르는 엑스박스가 뜰때, 그 이미지가 어떤 이미지인지 설명해주는 텍스트를 집어넣는 것. 웹표준에 필수적인 요소라고 한다. 최대한 이미지를 자세하게 설명하고, 이미지에 들어가는 텍스트는 모두 집어넣도록 한다. 시각장애인의 경우 이미지를 볼 수 없으니 정보의 형평성을 위해서라도 반드시 들어가야하는 속성이다.
+  </p>
+
+  <h1><li>&#60;img&#62;tag 출력하기</li></h1>
+  <P>﻿&#60;img&#62;태그는 &#60;img src=" 이미지 URL " alt=" 이미지 설명 텍스트 "&#62;의 형태로 사용한다.</P>﻿
+  <fieldset>
+    <legend>코드</legend>
+    &#60;img src="plane-4301615_1280.png" alt="plane"&#62;
+  </fieldset><br>
+  <fieldset>
+    <legend>출력화면</legend>
+    <img src="plane-4301615_1280.png" alt="plane">
+  </fieldset>
+
+  <h1><li>﻿&#60;img&#62;태그 속성을 사용하여 image size 조절하기</li></h1>
+  <p>웹페이지를 꾸미는 CSS를 사용하지 않고 HTML로 image의 size를 조절할 수 있다.</p>
+  <ul type="square">
+  <h2><li>width, height 높이 직접 설정하기</li></h2>
+  <p>﻿&#60;img&#62;태그의 속성으로 width와 height 값을 직접 입력하는 방법이다.</p>
+  <fieldset>
+    <legend>코드</legend>
+    &#60;img src="plane-4301615_1280.png" alt="plane" <strong>width="500" height="600"</strong>&#62;
+  </fieldset><br>
+  <fieldset>
+    <legend>출력화면</legend>
+    <img src="plane-4301615_1280.png" alt="plane" width="500" height="600">
+  </fieldset>
+
+  <h2><li>&#60;img&#62;태그 속에 style 속성 사용하기</li></h2>
+  <p>css의 문법인 style을 속성으로 끌어와서 css의 문법으로 꾸미는 방법이다. 이 방법을 쓰게 되면 CSS로 작성한 style sheets가 해당 이미지의 크기를 멋대로 바꿀 수 없기 때문에 W3school에서는 style 속성을 쓰는 것을 권장하고 있다.</p>
+  <fieldset>
+    <legend>코드</legend>
+    &#60;img src="plane-4301615_1280.png alt="plane <strong>style="width:500px; height:600px;"</strong>&#62;
+  </fieldset><br>
+  <fieldset>
+    <legend>출력화면</legend>
+    <img src="plane-4301615_1280.png" alt="plane" style="width:500px; height:600px;">
+  </fieldset>
+</ul>
+</ol>
+</body>
+</html>
