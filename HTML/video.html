@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>video삽입하기</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    body{
+      font-family:"나눔고딕";
+    }
+      .title{
+        height:50px;
+        font-weight:800;
+        font-size:50px;
+      }
+      h1{
+        border-style:solid;
+        border-width:0 0 5px 0;
+        border-color:blue;
+      }
+      p{
+        text-indent:10px;
+      }
+      iframe{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      img{
+        width:600px;
+      }
+
+    </style>
+  </head>
+  <body>
+  <ol>
+    <div class="title">For Beginner</div>
+    <h1><li>유튜브 동영상 삽입하기</li></h1>
+    <p>﻿웹페이지에 자료로 유튜브 동영상을 넣고 싶을때, 유튜브 영상에서 이미 코드로 영상을 불러낼 수 있는 서비스를 제공하고 있어 우리는 별다른 코드를 따지 않아도 된다.</p>
+
+    <h1><li>유튜브 동영상 삽입하는 방법</li></h1>
+    <p>삽입한 유튜브 영상 주소 : <a href="https://youtu.be/oZS74-w719E">https://youtu.be/oZS74-w719E</a></p>
+    <p>﻿매번 챙겨보는 비혼 여성 유튜브 채널 혼삶비결! 채널 초창기였던 명절파업 영상부터 구독해서 자기만의 방, 집구할때 호구 안잡히는 법, 최근 대리모와 임신중단죄 영상까지 유익한 영상들이 많이 올라오는데 재밌기 까지 해서 매번 알람 맞춰두고 보고 있습니다. 오래 활동해주시길!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oZS74-w719E?start=457" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <ul type="square">
+    <h2><li>﻿00:00 부터 시작하는 영상 삽입 방법</li></h2>
+    <ol>
+    <h3><li>﻿유튜브에서 삽입하고 싶은 동영상을 보러 들어간 후 [공유] 클릭</li></h3>
+    <img src="5.png" alt="share button click">
+    <h3>﻿<li>[공유]클릭 후 [퍼가기]를 클릭.</li></h3>
+    <p>﻿url 복사를 하면 웹 페이지에는 주소에 하이퍼링크도 안넣어지고 주소 텍스트만 들어가기 때문에 꼭 퍼가기를 클릭해서 들어한 후 코드를 복사해서 붙여넣기 해야 한다.</p>
+    <img src="6.png" alt="code share button click">
+    <h3><li>﻿동영상 퍼가기 아래에 있는 코드들 모두를 복사한다.</li></h3>
+    <img src="7.png" alt="all code copy">
+    <h3><li>﻿복사한 코드를 붙여넣기 한 후 제대로 출력됐는지 확인한다.</li></h3>
+    <fieldset>
+      <legend>코드</legend>
+      &#60;iframe width="560" height="315" src="https://www.youtube.com/embed/oZS74-w719E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&#62;&#60;/iframe&#62;
+    </fieldset><br>
+    <fieldset>
+      <legend>출력화면</legend>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oZS74-w719E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </fieldset>
+  </ol>
+
+    <h2><li>﻿특정 시간부터 시작하는 영상 삽입 방법</li></h2>
+    <ol>
+    <h3><li>﻿[공유]-[퍼가기]까지는 동일하게 진행한다.</li></h3>
+    <h3><li>﻿영상을 시작하고 싶은 시간을 [시작 시간]에 입력한 후 체크박스 클릭하고, 코드 모두를 복사한다.</li></h3>
+    <img src="8.png" alt="share button click">
+    <h3><li>﻿코드를 붙여넣기 한 후 잘 출력됐는지 확인한다.</li></h3>
+    <fieldset>
+      <legend>코드</legend>
+      &#60;iframe width="560" height="315" src="https://www.youtube.com/embed/oZS74-w719E?start=457" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&#62;&#60;/iframe&#62;
+    </fieldset><br>
+    <fieldset>
+      <legend>출력화면</legend>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oZS74-w719E?start=457" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </fieldset>
+  </ol>
+  </ul>
+  </ol>
+  </body>
+</html>
