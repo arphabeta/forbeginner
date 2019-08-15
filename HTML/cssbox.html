@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>cssboxmodel</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    body{
+      font-family:"나눔고딕";
+    }
+    .title{
+      height:50px;
+      font-weight:800;
+      font-size:50px;
+    }
+    h1{
+      border-style:solid;
+      border-width:0 0 5px 0;
+      border-color:blue;
+    }
+    .under{
+      text-align:center;
+      font-size:50px;
+      font-weight:800;
+    }
+    .ul{
+      font-size:17px;
+      font-weight:bold;
+    }
+    .boxmodel {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p{
+      text-indent:10px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="title">For Beginner</div>
+    <ol>
+    <h1><li>CSS Box Model이란?</li></h1>
+    <p>모든 HTML 요소들은 아래의 박스 모양을 차지하고 있다. CSS Box Model은 Content, Padding, Border, Margin으로 이루어져 있다.</p><br>
+    <img src="28.jpg" alt="CSS Box Model" width="200px;" class="boxmodel"><br><br>
+    <h2>■ CSS Box Model 요소</h2>
+    <ul type="square">
+      <li>Content : 텍스트나 &#60;img&#62;태그처럼 자신의 영역만 차지하는 요소</li>
+      <li>Padding : Border 요소와 Content 요소 사이에 있는 안쪽 여백</li>
+      <li>Border : Content+Padding 요소를 감싸고 있는 영역</li>
+      <li>Margin : Border의 바깥 여백</li>
+    </ul>
+    <h1><li>CSS Box Model 보는 법</li></h1>
+    <p><ul type="square" class="ul">
+      <li>[F12]를 눌러 개발자도구를 연다.</li><br>
+      <img src="026.jpg" alt="개발자도구를 오픈한 상태" width="650px;"><br><br>
+      <li>개발자도구에서 [Elements]-[Computed]를 누르면 CSS box가 나온다.</li><br>
+      <img src="46.png" alt="개발자도구를 오픈한 상태" width="650px;"><br><br>
+      <p class="under">↓↓</p>
+      <img src="027.jpg" alt="cssbox 나타난 상태" width="650px;"><br><br><br>
+      <li>개발자도구 좌측 상단에 있는 사각형에 마우스가 올라가 있는 아이콘을<img src="K-026(2).jpg" alt="사각형에 마우스가 올라가 있는 그림"> 클릭한다.</li><br>
+      <li>아이콘을 클릭한 후, 궁금한 태그를 클릭해서 해당 태그가 얼마나 공간을 차지하고 있는지 확인한다.</li><br>
+      <img src=27.jpg alt="css box 확인" width="480px;"><br>
+
+    </ul></p>
+    <h1><li>CSS Box Model로 보는 Block level element, inline element</li></h1>
+    <p></p>
+    <ol>
+      <h2><li>block level element</li></h2>
+      <p>block level element (블록 레벨 엘리먼트). 화면 전체 테두리를 쓰는 태그들을 말한다. 대표적인 태그는 &#60;h1&#62;~&#60;h6&#62;, &#60;ol&#62;, &#60;ul&#62;, &#60;li&#62;, &#60;p&#62; 등의 태그들이 있다.</p>
+      <p>예시)</p>
+      <p>&#60;p&#62;태그는 Content와 상,하 Margin요소를 가지고 있는 block element 태그이다.</p>
+      <img src="K-026.jpg" alt="block level element" width="600px">
+      <h2><li>inline element</li></h2>
+      <p>inline element (인라인 엘리먼트). 자기 contents 만큼의 테두리를 쓰는 태그들을 말한다. 대표적인 태그는 &#60;img&#62;, &#60;a&#62;, &#60;span&#62;, &#60;b&#62;, &#60;big&#62; 등의 태그들이 있다.</p>
+      <p>예시)</p>
+      <p>&#60;b&#62;태그는 Content로만 이루어진 inline element 태그이다.</p>
+      <img src="K-029.jpg" alt="inline element" width="450px" class="boxmodel">
+
+    </ol>
+
+
+  </ol>
+  </body>
+</html>
