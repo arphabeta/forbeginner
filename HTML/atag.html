@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>하이퍼링크삽입하기</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <style>
+  body{
+    font-family:"나눔고딕";
+  }
+  .title{
+    height:50px;
+    font-weight:800;
+    font-size:50px;
+  }
+  h1{
+    border-style:solid;
+    border-width:0 0 5px 0;
+    border-color:blue;
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  xmp{
+    font-family:"나눔고딕";
+  }
+  </style>
+</head>
+<body>
+<div class="title">For Beginner</div>
+  <a name="top"></a>
+  <ol
+  <h1>하이퍼링크 연결형식</h1>
+  <ol>
+    <h2><li>a태그로 외부 사이트 링크 삽입하기</li></h2>
+      ﻿a태그는 하이퍼링크를 삽입하는 태그이다. anchor(닻)의 첫 글자를 딴 a를 사용한다. 배가 정박할 때 사용하는 닻을 의미. 정보의 바다에 정박한다는 시적인 의미를 지니고 있다. -유튜브 생활코딩
+      <br><br>
+
+      <fieldset background-color:#b0f4e6>
+        <big><strong><xmp>﻿<a href="첨부하고 싶은 링크" target="_blank" title="링크에 마우스 가져다 댔을 때 미리 보기 할 제목">하이퍼링크 달고 싶은 단어나 문장, 이미지</a>﻿</xmp></strong></big>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend> 입력 코드</legend>
+        <xmp>
+        <a href="http://www.naver.com" target="_blank" title="네이버">네이버</a>로 이동하기
+        <a href="http://www.daum.net" target="_blank" title="다음">다음으로 이동하기</a>
+        </xmp>
+      </fieldset>
+
+      <br>
+      <fieldset>
+        <legend>출력 화면</legend>
+        <a href="http://www.naver.com" target="_blank" title="네이버">네이버</a>로 이동하기<br><br>
+        <a href="http://www.daum.net" target="_blank" title="다음">다음으로 이동하기</a>
+      </fieldset>
+    <h2><li>﻿같은 파일내 HTML 문서에 하이퍼링크 연결하기</li></h2>
+    ﻿같은 파일에 있는 HTML파일과 연결하고 싶으면 <a>tag 안의 href 속성 안에 HTML 문서명을 치면된다.
+      <br><br>
+    <fieldset>
+      <legend> 입력 코드 </legend>
+      <xmp>
+        <a href="tag1-기본태그.html" target="_blank" title="기본태그">기본태그</a>
+        <a href="tag2-표만들기.html" target="_blank" title="표만들기">표만들기</a>
+        <a href="tag3-표만들기실습.html" target="_blank" title="표만들기실습">표만들기실습</a>
+      </xmp>
+    </fieldset> <br>
+
+    <fieldset>
+      <legend>출력 화면</legend>
+        <a href="tag1-기본태그.html" target="_blank" title="기본태그">기본태그</a>
+        <a href="tag2-표만들기.html" target="_blank" title="표만들기">표만들기</a>
+        <a href="tag3-표만들기실습.html" target="_blank" title="표만들기실습">표만들기실습</a>
+   </fieldset>
+
+
+ <h2><li>﻿이미지에 하이퍼링크 삽입하기</li></h2>
+ ﻿a태그 사이에서 이미지 태그인 img태그를 사용하면 이미지에 하이퍼링크가 삽입된다.
+    <br><br>
+   <fieldset>
+     <legend>입력 코드</legend>
+     <xmp>
+       <a href="http://www.naver.com" title="네이버"><img src="holiday-4138980_1920.png"></a>
+     </xmp>
+   </fieldset>
+   <br>
+   <fieldset>
+     <legend>출력화면</legend>
+       <a href="http://www.naver.com" title="네이버"><img src="holiday-4138980_1920.png" width="70%"></a>
+   </fieldset>
+<h2>﻿<li>문서 내의 특정 위치에 하이퍼링크 삽입하기</li></h2>
+﻿문서가 길 경우 하이퍼링크를 클릭하면 문서내의 특정 위치에 도달하도록 하는 태그이다. 하이퍼링크를 클릭하여 도달하게 하고픈 코드 바로 윗줄에 <xmp><a name="지정하고 싶은 이름"></xmp>을 입력해준다. 그 후 하이퍼링크를 달 단어, 문장 혹은 이미지 코드에 부분에 <xmp><a href="#name에 지정했던 이름"></xmp>코드를 작성한다. 꼭 #을 붙여주어야 된다.﻿
+<br><br>
+  <fieldset>
+    <legend>입력 코드</legend>
+    <xmp>
+      (첫줄)
+    <a name="top"></a>
+    <h1>하이퍼링크 연결형식</h1>
+
+      (기타 태그들)
+
+    <ul>
+      <li><a href="#top">맨위로 이동하기</a></li>
+    </ul>
+    </xmp>
+  </fieldset> <br>
+
+  <fieldset>
+    <legend>출력 화면</legend>
+    <ul>
+      <li><a href="#top">맨위로 이동하기</a></li>
+    </ul>
+  </fieldset>
+
+  </ol>
+</body>
+</html>
