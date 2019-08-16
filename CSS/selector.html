@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>selector</title>
+    <style>
+      body{
+        font-family:"나눔고딕";
+      }
+      .title{
+        height:50px;
+        font-weight:800;
+        font-size:50px;
+      }
+      h1{
+        border-style:solid;
+        border-width:0 0 5px 0;
+        border-color:blue;
+      }
+      img{
+        width:600px;
+      }
+      p{
+        text-indent:10px;
+      }
+      .c1{
+        text-indent:30px;
+      }
+      .c2{
+        text-indent:50px;
+      }
+      .c3{
+        text-indent:80px;
+        font-size:30px;
+        font-weight:bold;
+        color:red;
+      }
+      .c4{
+        text-indent:50px;
+        font-size:22px;
+        font-weight:bold;
+        color:red;
+      }
+      a {
+        color:red;
+        font-size:30px;
+      }
+      .u{
+        font-size:25px;
+        font-weight:bold;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">For Beginner</div>
+    <ol>
+      <h1><li>﻿CSS의 기초 : Selector(선택자), Declaration(선언), Property(속성), Value(값)</li></h1>
+      <p>﻿CSS는 웹을 꾸밀 때 사용하는 언어다. HTML이 요소와 속성으로 이루어져 있는 것처럼 CSS는 Selector(선택자)와 Declaration(선언)이라는 큰 범위로 이루어져 있다.</p>
+      <ul type="square">
+        <h2><li>﻿Selector(선택자)</li></h2>
+        <p>﻿어떤 태그를 바꿀 것인가를 설정하는 것. "하이퍼링크의 글씨 색깔을 빨간색으로 바꿀 것이다"에서 '하이퍼링크'에 해당하는 것이 selector(선택자)이다.</p>
+        <h2><li>﻿Declaration(선언)</li></h2>
+        <p>﻿바꿀 태그를 어떻게 바꿀 것인가를 결정하는 부분. "하이퍼링크의 글씨 색깔을 빨간색으로 바꿀 것이다"에서 '글씨 색깔을 빨간색으로 바꿀 것이다'에 해당하는 것이 Declaration(선언)이다.</p>
+        <img src="selector.PNG" alt="Selector(선택자), Declaration(선언)">
+        <p>﻿Declaration(선언)은 Property(속성)와 Value(값)으로 이루어져 있다.</p>
+        <h2><li>Property(속성)</li></h2>
+        <p>﻿선택자의 어떤 부분을 바꿀지를 선택하는 것. "하이퍼링크의 글씨 색깔을 빨간색으로 바꿀 것이다"의 "글씨 색깔"에 해당하는 것이 property(속성)이다.﻿</p>
+        <h2><li>Value(값)</li></h2>
+      </ul>
+        <p>﻿바꾸고 싶은 속성을 정확하게 어떤 값으로 바꿀 건지 선택하는 것. "하이퍼링크의 글씨 색깔을 빨간색으로 바꿀 것이다"의 "빨간색"에 해당하는 것이 value(값)이다.﻿</p>
+        <img src="property.PNG" alt="Property(속성), Value(값)">
+        <p>﻿예문으로 들었던 "하이퍼링크의 글씨 색깔을 빨간색으로 바꿀 것이다"로 다시 정리해보면 아래와 같다.﻿</p>
+        <p class="u">﻿"하이퍼링크의 글씨 색깔을 빨간색으로 바꿀 것이다"</p>
+        <ul type="square">
+          <h3><li>﻿selector(선택자) : "하이퍼링크"</li></h3>
+          <h3><li>﻿Declaration(선언) : "글씨 색깔을 빨간색으로 바꿀 것이다"</li></h3>
+            <ul type="disc">
+              <h4><li>﻿property(속성) : "글씨 색깔"</li></h4>
+              <h4><li>﻿value(값) : "빨간색으로 바꿀 것"</li></h4>
+            </ul>
+        </ul>
+        <p>﻿ 그리고 위의 문장을 CSS 문법으로 작성한 것이 아래 코드이다.</p>
+        <fieldset>
+          <legend>코드</legend>
+          a {
+            color:red;
+          }
+        </fieldset><br>
+
+        <h1><li>﻿예제 CSS코드를 실제  &#60;a&#62;태그에 적용시켜보기</li></h1>
+        <p>﻿이제 하이퍼링크 태그인 &#60;a&#62;tag에 위의 예제를 적용시켜보자.</p>
+        <ol>
+          <h2><li>&#60;body&#62;﻿태그 안에 &#60;a&#62;태그를 먼저 작성한다.</li></h2>
+          <h2><li>&#60;style&#62;태그 안에 ﻿a {color:red;}를 넣는다.</li></h2>
+        </ol>
+          <fieldset>
+            <legend>코드</legend>
+            &#60;!DOCTYPE html&#62;<br>
+            &#60;html&#62;<br>
+            <div class="c1">  &#60;head&#62;</div><br>
+                <div class="c2">&#60;meta charset="utf-8"&#62;</div><br>
+                <div class="c2">&#60;title&#62;&#60;/title&#62;</div><br>
+                <div class="c2">&#60;style&#62;</div><br>
+                  <div class="c3">﻿a {color:red;}</div><br>
+                <div class="c2">&#60;/style&#62;</div><br>
+            <div class="c1">&#60;/head&#62;</div><br>
+
+            <div class="c1">&#60;body&#62;</div><br>
+              <div class="c4">&#60;a href="https://www.naver.com"&#62;네이버&#60;/a&#62;</div><br>
+            <div class="c1">&#60;/body&#62;</div><br>
+          &#60;/html&#62;<br>
+        </fieldset> <br>
+        <fieldset>
+          <legend>출력 화면</legend>
+          <p><a href="https://www.naver.com">네이버</a></p>
+        </fieldset>
+
+
+
+    </ol>
+
+  </body>
+</html>
