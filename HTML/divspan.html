@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&#60;div&#62;&#60;span&#62;</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family:"나눔고딕";
+      }
+        .title{
+          height:50px;
+          font-weight:800;
+          font-size:50px;
+        }
+        h1{
+          border-style:solid;
+          border-width:0 0 5px 0;
+          border-color:blue;
+        }
+        p{
+          text-indent:10px;
+        }
+        img{
+          margin: 0 auto;
+          width:600px;
+        }
+        .c1{
+          text-indent:30px;
+        }
+        .c2{
+          text-indent:50px;
+        }
+        .p{
+          font-weight:bold;
+          font-size:large;
+        }
+        .img{
+          margin:30px 0;
+        }
+    </style>
+  </head>
+  <body>
+<div class="title">For Beginner</div>
+<ol>
+  <h1><li>&#60;div&#62; 태그란?</li></h1>
+  <p>﻿&#60;div&#62;tag란 division, 분할, 분배, 분류를 뜻합니다. html 안에 존재하는 여러개의 태그들을 &#60;div&#62;라는 큰 단위로 묶어주는 주머니 역할을 한다. 큰 단위인 &#60;div&#62;로 묶어주면, 나중에 css로 &#60;div&#62;에만 수식을 해도 &#60;div&#62;태그 안에 속해있는 태그들이 모두 같은 명령을 받아 동일하게 적용된다. </p>
+  <p>﻿만약 코드가 1,000줄이 넘고 코드도 다른 코드 30개들이 있는데 여기에 모두 동일한 효과를 적용시켜야 된다고 하면, 코드 하나하나에 효과를 넣는게 아니라 &#60;div&#62; 태그로 묶어 나중에 css로 30여개의 코드에 동일한 효과를 적용시킬 때 사용한다.</p>
+  <p>&#60;div&#62; 태그는 block level element (블록 라벨 엘리먼트)라 해당하는 코드의 행 전체를 차지한다. 다만, &#60;div&#62; 태그는 이렇게 묶어주는 주머니 역할이기 때문에 &#60;div&#62;태그 자체로는 시각적인 변화를 나타낼 수 없다.﻿</p>
+  <img src="divtag.png" alt="div태그는큰주머니역할을한다."> <br>
+
+  <h1><li>﻿&#60;span&#62; 태그란?</li></h1>
+  <p>&#60;span&#62;태그도 &#60;div&#62;태그와 같이 여러개의 태그들을 묶어주는 주머니 역할을 한다. &#60;span&#62;태그는 inline element (인라인 엘리먼트)라 자신의 content만큼 공간을 차지한다. &#60;span&#62; 태그는 이렇게 묶어주는 주머니 역할이기 때문에 &#60;span&#62;태그 자체로는 시각적인 변화를 나타낼 수 없다.</p>
+  <img src="span.png" alt="span태그는큰주머니역할을한다.">
+
+  <h1><li>&#60;div&#62;, &#60;span&#62;tag 출력하기</li></h1>
+  <ul>
+    <h2><li>&#60;div&#62;tag 출력하기</li></h2>
+    <fieldset>
+      <legend>코드</legend>
+      <div class="c1">&#60;div&#62;</div>
+      <div class="c2">텍스트 텍스트</div>
+      <div class="c1">&#60;/div&#62;</div> <br>
+
+      <div class="c1">&#60;div&#62;</div>
+      <div class="c2">텍스트 텍스트</div>
+      <div class="c1">&#60;/div&#62;</div>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>출력 화면</legend>
+      <div class="c1">
+        <div class="c2">텍스트 텍스트</div>
+      </div>
+
+      <div class="c1">
+        <div class="c2">텍스트 텍스트</div>
+      </div>
+    </fieldset>
+
+    <h2><li>&#60;span&#62;tag 출력하기</li></h2>
+    <fieldset>
+      <legend>코드</legend>
+      <div class="c1">&#60;span&#62;</div>
+        <div class="c2">텍스트 텍스트</div>
+      <div class="c1">&#60;/span&#62;</div><br>
+
+      <div class="c1">&#60;span&#62;</div>
+        <div class="c2">텍스트 텍스트</div>
+      <div class="c1">&#60;/span&#62;</div>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>출력 화면</legend>
+      <span>
+        텍스트 텍스트
+      </span>
+      <span>
+        텍스트 텍스트
+      </span>
+    </fieldset>
+
+  </ul>
+  <h1><li>&#60;p&#62;, &#60;div&#62;, &#60;span&#62;tag의 차이점</li></h1>
+  <p>﻿나중에 html 코드를 보다보면 이 &#60;p&#62;, &#60;div&#62;, &#60;span&#62;﻿ 태그가 뭐가 다른건지 의문을 품게될 때가 있다. 웹제작 수업 선생님께 여쭤보니 아래처럼 가르쳐주셨다. 궁금하셨던 분들은 참고하시면 좋을듯하다.﻿</p>
+
+  <ul>
+  <div class="p">
+  <li><span style="background-color:yellow">﻿&#60;p&#62; : 문단 분량의 content + 상하 margin이 있음</span>
+  </li></div>
+  <img src="K-026.jpg" class="img">
+  <div class="p">
+  <li><span style="background-color:yellow">﻿&#60;div&#62; : block level element (블록 라벨 엘리먼트) - 화면 전체 테두리를 쓰는 애들. content에 해당하는 &#60;div&#62;라는 텍스트가 행 전체를 차지하고 있다. ﻿</span>
+  </li></div>
+  <img src="K-027.jpg" class="img">
+  <div class="p">
+  <li><span style="background-color:yellow">&#60;span&#62; : inline element (인라인 엘리먼트) - 자기 content 만큼의 테두리를 쓰는 애들. content에 해당하는 &#60;span&#62;이라는 텍스트가 자기 만큼의 공간을 차지하는 것을 볼 수 있다.﻿</span>
+  </li></div>
+  <img src="K-028.jpg" class="img">
+  <p>﻿(아직 block level element, inline element 개념이 헷갈리는 분들은 아래 그림과 포스팅을 참고해주세요. 초반에는 몰라도 되지만 나중에는 꼭 알아야하는 개념입니다.)<br><br>
+  링크 : <a href="﻿https://blog.naver.com/juyoung1704/221555999289"﻿>https://blog.naver.com/juyoung1704/221555999289</a></p>
+  <a href="https://blog.naver.com/juyoung1704/221555999289"><img src="K-024.jpg"  height="60%" width="90%"></a>
+  </ul>
+
+
+
+</ol>
+  </body>
+</html>
