@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&#60;class&#62;,&#60;id&#62;</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family:"나눔고딕";
+      }
+        .title{
+          height:50px;
+          font-weight:800;
+          font-size:50px;
+        }
+        h1{
+          border-style:solid;
+          border-width:0 0 5px 0;
+          border-color:blue;
+        }
+        p{
+          text-indent:10px;
+        }
+        .c1{
+          text-indent:30px;
+        }
+        .c2{
+          text-indent:50px;
+        }
+        .c3{
+          text-indent:80px;
+        }
+        fieldset img{ width: 200px;
+
+                      }
+        .image {width:700px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          }
+        .ya {  width: 400px;   height: 300px;}
+        .ju {   border: 30px solid orange;   }
+    </style>
+  </head>
+  <body>
+    <div class="title">For Beginner</div>
+    <ol>
+      <h1><li>﻿class(클래스)란?</li></h1>
+      <p>﻿ html에서 여러개의 태그들을 큰 단위로 묶어주는 주머니라고 할 수 있는 &#60;div&#62;, &#60;span&#62;이 있다면, CSS에는 이 &#60;div&#62;, &#60;span&#62;을 포함한 다른 &#60;h1&#62;, &#60;p&#62;, &#60;a&#62;태그 에도 이름을 붙여 같은 이름을 가진 태그들마다 CSS로 효과를 부여할 수 있는 것이 class이다.﻿</p>
+      <img src="classimg.png" alt="class는 2개의 class를 만들 수 있다." class="image"><br>
+      <h1><li>﻿class를 활용하여 출력하기</li></h1>
+      <ol type="A">
+        ﻿<h3><li>&#60;body&#62; 태그 내에 꾸밀 영역의 코드를 먼저 작성한다.</li></h3><br>
+        <h3><li>﻿class로 한꺼번에 꾸며주고 싶은 부분에 아래 양식으로 작성한다. </li></h3>
+          <p>﻿<b><big>&#60;태그 <mark>class="class이름"</mark>&#62;</big></b> : "class이름" 이라는 class 로 지정할 것이고, 이 "class이름"으로 지정한 영역들은 모두 동일한 효과를 받을 것이다. class 이름을 ya로 만드려면 &#60;태그 class="ya"&#62;로 써주면 된다. ﻿</p>
+
+          <p>﻿<b><big>&#60;태그 <mark>class="class이름 class이름"</mark>&#62;</big></b>﻿ : class이름에서 띄어쓰기만 하면 class 1개를 추가로 만들 수 있다.</p><br>
+            <fieldset>
+              <legend>코드</legend>
+                <div class="c1">&#60;body&#62;</div>
+                  <div class="c2">&#60;img src="beach1.png" class="ya"&#62;</div>
+                  <div class="c2">&#60;img src="beach2.png" class="ju"&#62;</div>
+                  <div class="c2">&#60;img src="beach3.png" class="ya ju"&#62;</div>
+                <div class="c1">&#60;/body&#62;</div>
+            </fieldset><br>
+            <fieldset>
+              <legend>출력 화면</legend>
+                <body>
+                  <img src="beach1.png">
+                  <img src="beach2.png">
+                  <img src="beach3.png">
+                </body>
+            </fieldset><br>
+
+        <h3><li>﻿&#60;style&#62; 태그 혹은 css 문서에 .(온점)class이름 형태로 입력해준다. 반드시 동일하게 입력해야 적용되므로 적용이 안된다 싶으면 오타가 있는지 확인해야 한다.</li></h3>
+        <p><b><big><mark>﻿.class이름﻿</mark>﻿{ 속성: 값; }</big></b>﻿: class에 "속성-값" 효과를 적용할 것이다.﻿</p>
+
+        <fieldset>
+        <legend>코드</legend>
+         <div class="c1">&#60;head&#62;</div>
+          <div class="c1">&#60;style&#62;</div>
+            <div class="c2">.ya {</div>
+              <div class="c3">width: 400px;</div>
+              <div class="c3">height: 300px;</div>
+            <div class="c2">}</div>
+            <div class="c2">.ju {</div>
+              <div class="c3 ">border: 30px solid orange;</div>
+            <div class="c2">}</div>
+          <div class="c1">&#60;/style&#62;</div>
+          <div class="c1">&#60;/head&#62;</div>
+      </fieldset><br>
+      <fieldset>
+        <legend>출력 화면</legend>
+          <body>
+            <img src="beach1.png" id="ya">
+            <img src="beach2.png" id="ju">
+            <img src="beach3.png" id="ya ju">
+          </body>
+      </fieldset>
+      </ol>
+<br>
+      <hr>
+
+      <h1><li>﻿﻿id(아이디)란?</li></h1>
+      <p>﻿id도 class와 동일하게 같은 이름을 가진 태그에 공통적인 효과를 부여할 수 있다. 하지만 id는 class처럼 동시에 2개 이상을 사용하지 못하고 1개만 사용할 수 있다. 1가지의 아이디만 지정할 수 있기 때문에 주로 홈페이지의 레이아웃 영역을 꾸밀 때 id를 사용한다.﻿﻿</p>
+      <img src="idimg.png" alt="id도 class와 동일하게 같은 이름을 가진 태그에 공통적인 효과를 부여할 수 있다." class="image"><br>
+      <h1><li>﻿id를 활용하여 출력하기</li></h1>
+      <ol type="A">
+        ﻿<h3><li>&#60;body&#62; 태그 내에 꾸밀 영역의 코드를 먼저 작성한다.</li></h3><br>
+        <h3><li>﻿id로 한꺼번에 꾸며주고 싶은 부분에 아래 양식으로 작성한다. </li></h3>
+          <p>﻿<b><big>&#60;</b></big>태그 <b><big><mark>﻿id="id이름"﻿</b></big></mark>&#62;</big></b> ﻿: "id이름" 이라는 id로 지정할 것이고, 이 "id이름"으로 지정한 영역은 css 효과를 받을 것이다.﻿ ﻿</p>
+
+            <fieldset>
+              <legend>코드</legend>
+                <div class="c1">&#60;body&#62;</div>
+                  <div class="c2">&#60;img src="beach1.png" id="ya"&#62;</div>
+                  <div class="c2">&#60;img src="beach2.png" id="ju"&#62;</div>
+                  <div class="c2">&#60;img src="beach3.png" id="ya ju"&#62;</div>
+                <div class="c1">&#60;/body&#62;</div>
+            </fieldset><br>
+            <fieldset>
+              <legend>출력 화면</legend>
+                <body>
+                  <img src="beach1.png">
+                  <img src="beach2.png">
+                  <img src="beach3.png">
+                </body>
+            </fieldset><br>
+
+        <h3><li>﻿&#60;style&#62; 태그 혹은 css 문서에 #id이름 형태로 입력해준다. 반드시 동일하게 입력해야 적용되므로 적용이 안된다 싶으면 오타가 있는지 확인해야 한다.</li></h3>
+        <p><b><big><mark>﻿#id이름﻿</mark>﻿{ 속성: 값; }</big></b>﻿﻿: id에 "속성-값" 효과를 적용할 것이다.﻿</p>
+
+        <fieldset>
+        <legend>코드</legend>
+         <div class="c1">&#60;head&#62;</div>
+          <div class="c1">&#60;style&#62;</div>
+            <div class="c2">#ya {</div>
+              <div class="c3">width: 400px;</div>
+              <div class="c3">height: 300px;</div>
+            <div class="c2">}</div>
+            <div class="c2">#ju {</div>
+              <div class="c3 ">border: 30px solid orange;</div>
+            <div class="c2">}</div>
+          <div class="c1">&#60;/style&#62;</div>
+          <div class="c1">&#60;/head&#62;</div>
+      </fieldset><br>
+      <fieldset>
+        <legend>출력 화면</legend>
+          <body>
+            <img src="beach1.png" class="ya">
+            <img src="beach2.png" class="ju">
+            <img src="beach3.png" class="ya ju">
+          </body>
+      </fieldset> <br><br>
+
+      <p><b>﻿위의 출력화면 중 beach3번 그림은 "ya", "ju" id 모두 적용되지 않았다. id는 class 처럼 2개를 한꺼번에 쓸 수 없다.</b></p>
+<br>
+      </ol>
+
+      <h1><li>﻿﻿﻿class와 id의 차이점</li></h1>
+      <ul type="square">
+        <h3><li>﻿class (클래스)</li></h3>
+        <p>﻿class를 설정할 때 띄어쓰기로 2개 이상의 클래스를 지정할 수 있다.</p>
+        <h3><li>﻿id (아이디)</li></h3>
+        <p>﻿id를 설정할 때 1개의 id만을 지정할 수 있다.</p>
+      </ul>
+    </ol>
+
+
+  </body>
+</html>
