@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>&#60;table&#62;tag</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    body{
+      font-family:"나눔고딕";
+    }
+      .title{
+        height:50px;
+        font-weight:800;
+        font-size:50px;
+      }
+      h1{
+        border-style:solid;
+        border-width:0 0 5px 0;
+        border-color:blue;
+      }
+      p{
+        text-indent:10px;
+      }
+      .c1{
+        text-indent:30px;
+      }
+      .c2{
+        text-indent:50px;
+      }
+      .c3{
+        text-indent:80px;
+      }
+      .bluemark {
+        background:#b2fcff;
+      }
+      .yellowmark {
+        background:yellow;
+        color:blue;
+        font-weight:bold;
+      }
+      .tablep{
+        margin:0 auto;
+      }
+      img{
+                width:600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">For Beginner</div>
+    <ol>
+      <h1><li>﻿﻿&#60;table&#62;, &#60;tr&#62;, &#60;td&#62;, &#60;th&#62; tag 란?</li></h1>
+      <p> <ul type="none">
+        <h4><li><mark class="bluemark">&#60;table&#62;</mark> : ﻿부모태그. 표를 만들기 위해서 시작과 끝에 무조건 써줘야 하는 태그.﻿</li></h4>
+        <h4><li><mark class="bluemark">&#60;tr&#62;</mark> : ﻿줄(행) 태그. 한 행을 열고 닫음을 표시해주는 태그.</li></h4>
+        <h4><li><mark class="bluemark">&#60;td&#62;</mark> : ﻿칸(열) 태그. 빈 공간에서 벽면에 충돌할 때마다 &#60;td&#62;tag 를 열고, 닫아준다. 맨 마지막 벽에서는 &#60;/td&#62;&#60;/tr&#62;로 닫아준다.</li></h4>
+        <h4><li><mark class="bluemark">&#60;th&#62;</mark> ﻿: &#60;td&#62; tag 자리에 쓰는 태그. &#60;th&#62; tag를 쓰면 표 안의 텍스트가 자동으로 굵게 되고, 가운데 정렬이 된다. ﻿</li></h4>
+      </ul></p>
+      <p>﻿<mark class="yellowmark">*표는 줄(행)-가로가 중요하다.</mark></p>
+      <p>﻿따라서, 빈 공간에서 시작하여 <mark class="yellowmark">그리고 싶은 표의 벽면에 충돌할 때마다 &#60;td&#62; tag를 열고 닫아준다.﻿</mark></p>
+
+      <p class="tablep"><img src="table1.png" alt="빈공간에서 벽면에 충돌할 때마다 <td>tag를 열고 닫아준다."></p>
+
+      <h1><li>﻿기본 2X2 표 출력하기</li></h1>
+
+<p><big>&#60;table border="1px" width="200px" height="200px"&#62;</big> → 표의 선은 1픽셀 굵기의 표는 가로 200픽셀, 세로 200픽셀로 지정할 것이다.</p>
+<p class="c1">&#60;tr&#62;&#60;td&#62;A&#60;/td&#62;&#60;td&#62;B&#60;/td&#62;&#60;/tr&#62; → □□</p>
+<p class="c1">&#60;tr&#62;&#60;td&#62;C&#60;/td&#62;&#60;td&#62;D&#60;/td&#62;&#60;/tr&#62; → □□</p>
+<p>&#60;/table&#62; → 표를 여기서 닫아줄 것이다.</p>
+
+<p class="tablep"><img src="table1.png" alt="빈공간에서 벽면에 충돌할 때마다 <td>tag를 열고 닫아준다."></p>
+
+<fieldset>
+  <legend>코드</legend>
+  <p>&#60;table border="1px" width="200px" height="200px"&#62;</p>
+  <p class="c1">&#60;tr&#62;&#60;td&#62;A&#60;/td&#62;&#60;td&#62;B&#60;/td&#62;&#60;/tr&#62;</p>
+  <p class="c1">&#60;tr&#62;&#60;td&#62;C&#60;/td&#62;&#60;td&#62;D&#60;/td&#62;&#60;/tr&#62;</p>
+  <p>&#60;/table&#62;</p>
+</fieldset><br>
+
+<fieldset>
+  <legend>출력 화면</legend>
+  <table border="1px" width="200px" height="200px">
+  <tr><td>A</td><td>B</td></tr>
+  <tr><td>C</td><td>D</td></tr>
+</table>
+</fieldset>
+
+<h1><li>﻿열병합 표 : colspan 사용</li></h1>
+<p>﻿열병합은 &#60;td&#62;tag 안에 colspan 속성을 사용한다. colspan 속성은 columns(기둥)+span(다리건물 따위의 기둥과 기둥 사이)를 뜻한다. <mark class="yellowmark">colspan="2" 에 들어가는 숫자는 2열을 병합했다는 병합했다</mark>는 의미다. 열병합한 칸 숫자가 와야하며, 절대 픽셀을 의미하는 것이 아니다.﻿</p>
+<br>
+<p>&#60;table border="1px" width="200px" height="200px"&#62; ﻿→ 표의 선은 1픽셀 굵기의 표는 가로 200픽셀, 세로 200픽셀로 지정할 것이다.</p>
+<p class="c1">&#60;tr&#62;&#60;td colspan="2"&#62;A&#60;/td&#62;&#60;/tr&#62; ﻿→ 이 행은 2개의 열을 병합할 것이다. □</p>
+<p class="c1">&#60;tr&#62;&#60;td&#62;C&#60;/td&#62;&#60;td&#62;D&#60;/td&#62;&#60;/tr&#62; ﻿→ □□﻿</p>
+<p>&#60;/table&#62;</p><br>
+
+<p class="tablep"><img src="table2.png" alt="빈공간에서 벽면에 충돌할 때마다 <td>tag를 열고 닫아준다."></p>
+<br>
+<fieldset>
+  <legend>코드</legend>
+  <p>&#60;table border="1px" width="200px" height="200px"&#62;</p>
+  <p class="c1">&#60;tr&#62;&#60;td colspan="2"&#62;A&#60;/td&#62;&#60;/tr&#62;</p>
+  <p class="c1">&#60;tr&#62;&#60;td&#62;C&#60;/td&#62;&#60;td&#62;D&#60;/td&#62;&#60;/tr&#62;</p>
+  <p>&#60;/table&#62;</p>
+</fieldset><br><br>
+
+<fieldset>
+  <legend>출력 화면</legend>
+  <table border="1px" width="200px" height="200px">
+    <tr><td colspan="2">A</td></tr>
+    <tr><td>B</td><td>C</td></tr>
+  </table>
+</fieldset>
+
+<h1><li>﻿행병합 : rowspan 사용</li></h1>
+<p>﻿행병합은 &#60;td&#62;tag 안에 rowspan속성을 사용한다.rowspan 속성은 row(사람, 사물들이 옆으로 늘어서 있는 열)+span(다리건물 따위의 기둥과 기둥 사이)를 뜻한다. rowspan="2" 에 들어가는 숫자는 2행을 병합했다는 병합했다는 의미다. 행병합한 칸 숫자가 와야하며, 절대 픽셀을 의미하는 것이 아니다.﻿</p>
+<p>﻿<mark><strong>* 행병합의 경우, 첫줄만 잘 보고 작성하면 꼬이지 않는다. 첫줄을 기준으로 하고 표를 작성한다.</strong></mark></p>
+<br>
+
+<p>&#60;table border="1px" width="200px" height="200px"&#62; ﻿→ 표의 선은 1픽셀 굵기의 표는 가로 200픽셀, 세로 200픽셀로 지정할 것이다.</p>
+<p class="c1">&#60;tr&#62;&#60;td rowspan="2"&#62;A&#60;/td&#62;&#60;td&#62;B&#60;/td&#62;&#60;/tr&#62;</p>
+<p class="c1">&#60;tr&#62;&#60;td&#62;C&#60;/td&#62;&#60;/tr&#62;﻿ → □</p>
+<p>&#60;/table&#62;</p><br>
+
+<p class="tablep"><img src="table3.png" alt="빈공간에서 벽면에 충돌할 때마다 <td>tag를 열고 닫아준다."></p>
+<br>
+<p class="tablep"><img src="table4.png" alt="빈공간에서 벽면에 충돌할 때마다 <td>tag를 열고 닫아준다."></p>
+<br><Br>
+
+<fieldset>
+  <legend>코드</legend>
+  <p>&#60;table border="1px" width="200px" height="200px"&#62;</p>
+  <p class="c1">&#60;tr&#62;&#60;td rowspan="2"&#62;A&#60;/td&#62;&#60;td&#62;B&#60;/td&#62;&#60;/tr&#62;</p>
+  <p class="c1">&#60;tr&#62;&#60;td&#62;C&#60;/td&#62;&#60;/tr&#62;</p>
+  <p>&#60;/table&#62;</p>
+</fieldset><br>
+
+<fieldset>
+  <legend>출력 화면</legend>
+  <table border="1px" width="200px" height="200px">
+    <tr><td rowspan="2">A</td><td>B</td></tr>
+    <tr><td>C</td></tr>
+  </table>
+</fieldset>
+
+
+
+
+
+
+</body>
+</html>
