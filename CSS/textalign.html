@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>&#60;form&#62;tag</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    body{
+      font-family:"나눔고딕";
+    }
+      .title{
+        height:50px;
+        font-weight:800;
+        font-size:50px;
+      }
+      h1{
+        border-style:solid;
+        border-width:0 0 5px 0;
+        border-color:blue;
+      }
+      p{
+        text-indent:10px;
+      }
+      .c1{
+        text-indent:30px;
+      }
+      .c2{
+        text-indent:50px;
+      }
+      .c3{
+        text-indent:80px;
+      }
+      .c4{
+        text-indent:100px;
+      }
+      .bluemark {
+        background:#b2fcff;
+      }
+      .yellowmark {
+        background:yellow;
+        color:blue;
+        font-weight:bold;
+      }
+      .tablep{
+        margin:0 auto;
+      }
+      img{
+          width:600px;
+      }
+      .input{
+        width:300px;
+      }
+      a {
+        text-decoration:none;
+        color:blue;
+      }
+      .pleft{
+        text-align: left;
+      }
+      .pright{
+        text-align: right;
+      }
+      .pcenter{
+        text-align: center;
+      }
+      .pjustify{
+        text-align: justify;
+      }
+    </style>
+</head>
+<body>
+  <div class="title">For Beginner</div>
+<ol>
+  <h1><li>﻿text-align 속성이란?﻿</li></h1>
+    <p>﻿text-align 속성은 문단 정렬을 시키는 태그이다. 이전 HTML 포스트 중 &#60;p align="left | right | center | justify"&#62;를 사용하여 문단 정렬을 하는 법을 포스팅했는데, 이 포스팅에서도 적었듯 HTML5에서는 &#60;p&#62;의 align 속성이 지원되지 않는다. 그래서 문단 왼쪽, 오른쪽, 가운데, 양쪽정렬을 시키고 싶다면 CSS를 사용하여 적용시켜야 한다. &#60;p&#62;태그에 아무 문단 정렬을 시키지 않으면 자동으로 왼쪽 정렬으로 출력된다.﻿</p>
+    <p>이전 포스팅 : <a href="https://blog.naver.com/juyoung1704/221630610060">https://blog.naver.com/juyoung1704/221630610060</a></p>
+  <h1><li>﻿text-align 속성 출력하기</li></h1>
+  <ol>
+    <h3><li>﻿출력할 문단 태그인 &#60;p&#62;tag 출력</li></h3>
+    <fieldset>
+      <legend>코드</legend>
+      <div class="c1">&#60;body&#62;</div>
+          <div class="c2">&#60;p&#62;text-align은 문단 정렬 속성&#60;/p&#62;</div>
+      <div class="c1">&#60;/body&#62;</div>
+    </fieldset><br>
+    <fieldset>
+      <legend>출력 화면</legend>
+          <p>text-align은 문단 정렬 속성</p>
+    </fieldset><br>
+
+    <h3><li>﻿﻿CSS로 text-align 속성 출력하기</li></h3>
+    <ul>
+      <h4><li>﻿﻿왼쪽 정렬 : text-align: left;</li></h4>
+        <fieldset>
+          <legend>코드</legend>
+            <div class="c1">&#60;style&#62;</div>
+            <div class="c2">p{</div>
+               <div class="c3">text-align: left;</div>
+            <div class="c2">}</div>
+            <div class="c1">&#60;/style&#62;</div>
+        </fieldset><br>
+        <fieldset>
+          <legend>출력 화면</legend>
+            <p class="pleft">text-align은 문단 정렬 속성</p>
+        </fieldset><br>
+
+      <h4><li>﻿오른쪽 정렬 : text-align: right;﻿</li></h4>
+        <fieldset>
+          <legend>코드</legend>
+          <div class="c1">&#60;style&#62;</div>
+          <div class="c2">p{</div>
+             <div class="c3">text-align: right;</div>
+          <div class="c2">}</div>
+          <div class="c1">&#60;/style&#62;</div>
+        </fieldset><br>
+        <fieldset>
+          <legend>출력 화면</legend>
+            <p class="pright">text-align은 문단 정렬 속성</p>
+        </fieldset><br>
+
+      <h4><li>﻿가운데 정렬 : text-align: center;﻿</li></h4>
+        <fieldset>
+          <legend>코드</legend>
+          <div class="c1">&#60;style&#62;</div>
+          <div class="c2">p{</div>
+             <div class="c3">text-align: center;</div>
+          <div class="c2">}</div>
+          <div class="c1">&#60;/style&#62;</div>
+        </fieldset><br>
+        <fieldset>
+          <legend>출력 화면</legend>
+            <p class="pcenter">text-align은 문단 정렬 속성</p>
+        </fieldset><br>
+      <h4><li>﻿가운데 정렬 : text-align: justify;﻿</li></h4>
+        <fieldset>
+          <legend>코드</legend>
+          <div class="c1">&#60;style&#62;</div>
+          <div class="c2">p{</div>
+             <div class="c3">text-align: justify;</div>
+          <div class="c2">}</div>
+          <div class="c1">&#60;/style&#62;</div>
+        </fieldset><br>
+        <fieldset>
+          <legend>출력 화면</legend>
+            <p class="pjustify">text-align은 문단 정렬 속성</p>
+        </fieldset><br>
+    </ul>
+
+  </ol>
+
+</body>
+</html>
