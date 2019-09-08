@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>&#60;input&#62;tag</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    body{
+      font-family:"나눔고딕";
+    }
+      .title{
+        height:50px;
+        font-weight:800;
+        font-size:50px;
+      }
+      h1{
+        border-style:solid;
+        border-width:0 0 5px 0;
+        border-color:blue;
+      }
+      p{
+        text-indent:10px;
+      }
+      .c1{
+        text-indent:30px;
+      }
+      .c2{
+        text-indent:50px;
+      }
+      .c3{
+        text-indent:80px;
+      }
+      .c4{
+        text-indent:100px;
+      }
+      .bluemark {
+        background:#b2fcff;
+      }
+      .yellowmark {
+        background:yellow;
+        color:blue;
+        font-weight:bold;
+      }
+      .tablep{
+        margin:0 auto;
+      }
+      img{
+          width:600px;
+      }
+      .input{
+        width:300px;
+      }
+      .pcenter{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <div class="title">For Beginner</div>
+<ol>
+  <h1><li>&#60;input&#62;tag란?</li></h1>
+    <p>&#60;input&#62;tag﻿란 사용자가 직접 데이터나 특정 값을 입력할 수 있는 부분을 출력할 수 있는 태그를 말한다. &#60;input&#62;태그 요소는 비어 있고, 속성 값을 포함해야 웹상에 표시된다. &#60;input&#62;은 inline element (인라인 엘리먼트)이며, 반드시 &#60;form&#62;tag를 부모 태그로 사용해야 한다.</p>
+    <p>&#60;﻿label&#62;﻿ : 직접적으로 선택지(옵션, 메뉴 등등)를 클릭하지 않고 텍스트 부분만 클릭해도 옵션 선택이 가능하도록 하는 기능을 부여하는 태그. 마우스 사용자들에게 편리함을 주기 위해 쓰는 태그이다. &#60;button&#62;, &#60;input&#62;, &#60;meter&#62;, &#60;output&#62;, &#60;progress&#62;, &#60;select&#62;, &#60;textarea&#62;tag에 사용한다.﻿</p>
+    <p>&#60;input&#62;tag﻿태그는 아래와 같이 이루어져 있다.</p>
+
+<br>
+  <ul type="none">
+    <h3><li>﻿&#60;label for="aa"&#62;성명&#60;/label&#62;﻿</li></h3>
+      <p class="c1"><strong>&#8594;﻿label</strong> : 텍스트 부분을 클릭해도 입력 박스에 커서가 나오게 하는 기능﻿</p>
+      <p class="c1"><strong>&#8594;﻿﻿for="aa"</strong> : 이 &#60;﻿label&#62;태그가 어떤 input 타입에 대한 태그인지 정의해 주는 것. for의 이름과 id의 이름이 같아야 한다.﻿</p>
+    <h3><li>﻿&#60;input type="type이름" id="id이름" name="이름" placeholder="데이터 입력 전 보여줄 글자"&#62;</li></h3>
+      <p class="c1"><strong>&#8594;﻿type="type이름"</strong> : 출력하고 싶은 type을 적는 공간. type의 종류에는 text, password, checkbox, date 등이 있다. ﻿</p>
+      <p class="c1"><strong>&#8594;﻿id="id이름"</strong> : 각 &#60;input type&#62;마다 CSS로 꾸며주기 위해 ID를 사용한다.﻿</p>
+      <p class="c1"><strong>&#8594;﻿name="이름"</strong> : 값을 제출하고 난 후, 각 값이 어떤 것을 기준으로 한 데이터 값인지 위한 '기준' ﻿</p>
+      <p class="c1"><strong>&#8594;﻿placeholder="데이터 입력 전 보여줄 글자"</strong> : 홈페이지 로그인을 할 때나 핸드폰 인증 시 값을 입력하지 않았음에도 '무슨 데이터 값'을 입력하면 되는지 알려주는 것. 아래 네이버 로그인 화면에서 클릭하기 전 ID를 입력하는 칸에는 '아이디'를, 비밀번호를 입력하는 칸에 '비밀번호'를 적으라고 안내해 주는 것이 placeholder이다. 주로 회색을 쓴다.﻿</p>
+      <br><br>
+      <img src="naverlogin.jpg" alt="naverlogin">
+  </ul><br>
+
+ <h1><li>&#60;input&#62;﻿태그 type 종류</li></h1>
+  <p>﻿ &#60;input&#62;태그 type 속성에는 여러 가지 종류가 있기 때문에 필요한 곳에 골라서 쓰는 것이 중요하다. 아래가 전부는 아니기에 각자 필요한 type을 읽은 후 다른 type 종류를 찾고 싶을 땐 아래 w3schools.com에서 확인하길 바란다.</p><br>
+  <p class="pcenter"><a href="﻿https://www.w3schools.com/html/html_form_input_types.asp">﻿https://www.w3schools.com/html/html_form_input_types.asp</a></p>
+<br>
+
+<ul type="square">
+  <li>﻿text : 텍스트를 입력할 수 있는 한 줄의 텍스트 공간을 출력하는 type.﻿</li>
+    <p>﻿<input type="text" id="text" name="text" value="text" placeholder="text">﻿</p>
+  <li>﻿password : 비밀번호를 입력할 수 있는 한 줄의 텍스트 공간을 출력하는 type. 텍스트를 입력하면 글자가 입력되지 않고 ●●●●으로 표시된다.﻿</li>
+    <p>﻿<input type="password" id="password" name="password" value="password" placeholder="password">﻿</p>
+  <li>﻿checkbox : 여러 가지를 선택할 수 있는 사각형의 체크박스를 출력하는 type. 체크박스를 클릭하면 '체크' 표시가 나타난다.﻿</li>
+    <p>﻿<input type="checkbox" id="checkbox" name="checkbox" value="checkbox" placeholder="checkbox">﻿
+       ﻿<input type="checkbox" id="checkbox" name="checkbox" value="checkbox" placeholder="checkbox">﻿
+       ﻿<input type="checkbox" id="checkbox" name="checkbox" value="checkbox" placeholder="checkbox">﻿</p>
+  <li>﻿radio : 하나를 선택할 수 있는 원형의 체크박스를 출력하는 type.﻿</li>
+    <p>﻿<input type="radio" id="radio" name="radio" value="radio" placeholder="radio">﻿
+       ﻿<input type="radio" id="radio" name="radio" value="radio" placeholder="radio">
+       ﻿<input type="radio" id="radio" name="radio" value="radio" placeholder="radio">﻿</p>
+  <li>﻿button : 클릭이 가능한 버튼을 출력하는 type. 주로 javascript를 사용하여 스크립트를 활성화하는데 사용한다. type="button"은 요소 안에 이미지를 넣을 수 없어 CSS로 꾸며줄 때는 &#60;button&#62;tag를 사용한다.﻿</li>
+    <p>﻿<input type="button" id="button" name="button" value="button" placeholder="button">﻿</p>
+  <li>﻿date : 날짜를 출력하는 type.</li>
+    <p>﻿<input type="date" id="date" name="date" value="date">﻿</p>
+  <li>﻿month : 달을 출력하는 type.﻿</li>
+    <p>﻿<input type="month" id="month" name="month" value="month">﻿</p>
+  <li>﻿week : 주수를 출력하는 type.﻿</li>
+    <p>﻿<input type="week" id="week" name="week" value="week">﻿</p>
+  <li>﻿time : 시간을 출력하는 type.﻿</li>
+    <p>﻿<input type="time" id="time" name="time" value="time">﻿</p>
+  <li>﻿submit : 작성되어 있는 모든 값을 핸들러에 제출하는 제출 버튼을 출력하는 type. </li>
+    <p>﻿<input type="submit" id="submit" name="submit" value="submit">﻿</p>
+  <li>﻿reset : 작성되어 있는 모든 값을 리셋(초기화) 시키는 type.﻿</li>
+    <p>﻿<input type="reset" id="reset" name="reset" value="reset">﻿</p>
+  <li>﻿color : 컬러 픽커(color picker)를 출력하는 type.﻿</li>
+    <p>﻿<input type="color" id="color" name="color" value="color">﻿</p>
+  <li>﻿file : 파일 선택 창이 뜨게끔 출력하는 type.</li>
+    <p>﻿<input type="file" id="file" name="file" value="file">﻿</p>
+</ul>
+</ol>
+</body>
+</html>
