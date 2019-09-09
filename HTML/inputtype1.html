@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>&#60;input type&#62;1</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    body{
+      font-family:"나눔고딕";
+    }
+      .title{
+        height:50px;
+        font-weight:800;
+        font-size:50px;
+      }
+      h1{
+        border-style:solid;
+        border-width:0 0 5px 0;
+        border-color:blue;
+      }
+      p{
+        text-indent:10px;
+      }
+      .c1{
+        text-indent:30px;
+      }
+      .c2{
+        text-indent:50px;
+      }
+      .c3{
+        text-indent:80px;
+      }
+      .c4{
+        text-indent:100px;
+      }
+      .bluemark {
+        background:#b2fcff;
+      }
+      .yellowmark {
+        background:yellow;
+        color:blue;
+        font-weight:bold;
+      }
+      .tablep{
+        margin:0 auto;
+      }
+      img{
+          width:600px;
+      }
+      .input{
+        width:300px;
+      }
+      .pcenter{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <div class="title">For Beginner</div>
+<ol>
+  <h1><li>&#60;input type="text"&#62;란?</li></h1>
+  <p>﻿텍스트를 입력할 수 있는 한 줄의 텍스트 공간을 출력하는 type. placeholder에 텍스트를 입력하면 클릭하기 전까지 텍스트가 보이고, 클릭을 한 후엔 텍스트가 사라지고, 입력한 값만이 쓰여진다.﻿</p>
+  <h1><li>﻿input type="text" 출력하기</li></h1>
+
+  <ul type="none">
+    <h3><li>﻿&#60;label for="﻿text"&#62;﻿ID&#60;/label&#62;﻿</li></h3>
+      <p class="c1"><strong>&#8594;﻿label</strong> : 텍스트 부분을 클릭해도 입력 박스에 커서가 나오게 하는 기능﻿</p>
+      <p class="c1"><strong>&#8594;﻿﻿for="text"</strong> : 이 &#60;﻿label&#62;태그가 어떤 input 타입에 대한 태그인지 정의해 주는 것. for의 이름과 id의 이름이 같아야 한다.﻿</p>
+    <h3><li>﻿&#60;﻿input type="text" id="text" name="text" placeholder="text"&#62;</li></h3>
+      <p class="c1"><strong>&#8594;﻿id="id이름"</strong> : 각 &#60;input type&#62;마다 CSS로 꾸며주기 위해 ID를 사용한다.﻿</p>
+      <p class="c1"><strong>&#8594;﻿name="이름"</strong> : 값을 제출하고 난 후, 각 값이 어떤 것을 기준으로 한 데이터 값인지 위한 '기준' ﻿</p>
+      <p class="c1"><strong>&#8594;﻿placeholder="데이터 입력 전 보여줄 글자"</strong> : 홈페이지 로그인을 할 때나 핸드폰 인증 시 값을 입력하지 않았음에도 '무슨 데이터 값'을 입력하면 되는지 알려주는 것. 아래 네이버 로그인 화면에서 클릭하기 전 ID를 입력하는 칸에는 '아이디'를, 비밀번호를 입력하는 칸에 '비밀번호'를 적으라고 안내해 주는 것이 placeholder이다. 주로 회색을 쓴다.﻿</p>
+      <br><br>
+      <img src="naverlogin.jpg" alt="naverlogin">
+  </ul><br>
+
+  <fieldset>
+    <legend>코드</legend>
+    <p>&#60;label for="text"&#62;ID&#60;/label&#62;</p>
+    <p>&#60;input type="text" id="text" name="text" placeholder="text"&#62;</p>
+  </fieldset><br>
+  <fieldset>
+    <legend>출력 화면</legend>
+    <p><label for="text">ID</label>
+    <input type="text" id="text" name="text" placeholder="text">﻿ </p>
+  </fieldset><br>
+
+
+
+  <h1><li>&#60;﻿input type="password"&#62;란?</li></h1>
+    <p>﻿비밀번호를 입력할 수 있는 한 줄의 텍스트 공간을 출력하는 type. 텍스트를 입력하면 글자가 입력되지 않고 ●●●●으로 표시된다. placeholder에 텍스트를 입력하면 text타입과 동일하게 텍스트가 출력된다.</p>
+
+  <h1><li>﻿input type="password" 출력하기</li></h1>
+  <fieldset>
+    <legend>코드</legend>
+    <p>&#60;label for="password"&#62;PASSWORD&#60;/label&#62;</p>
+    <p>&#60;input type="password" id="password" name="password" placeholder="password"&#62;</p>
+  </fieldset><br>
+  <fieldset>
+    <legend>출력 화면</legend>
+    <p><label for="password">PASSWORD</label>
+    <input type="password" id="password" name="password" placeholder="password"></p>
+  </fieldset><br>
+
+</ol>
+</body>
+</html>
