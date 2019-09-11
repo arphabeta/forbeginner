@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>&#60;input type&#62;2</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    body{
+      font-family:"나눔고딕";
+    }
+      .title{
+        height:50px;
+        font-weight:800;
+        font-size:50px;
+      }
+      h1{
+        border-style:solid;
+        border-width:0 0 5px 0;
+        border-color:blue;
+      }
+      p{
+        text-indent:10px;
+      }
+      .c1{
+        text-indent:30px;
+      }
+      .c2{
+        text-indent:50px;
+      }
+      .c3{
+        text-indent:80px;
+      }
+      .c4{
+        text-indent:100px;
+      }
+      .bluemark {
+        background:#b2fcff;
+      }
+      .yellowmark {
+        background:yellow;
+        color:blue;
+        font-weight:bold;
+      }
+      .tablep{
+        margin:0 auto;
+      }
+      img{
+          width:600px;
+      }
+      .input{
+        width:300px;
+      }
+      .pcenter{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <div class="title">For Beginner</div>
+<ol>
+  <h1><li>&#60;input type="﻿checkbox"&#62;란?</li></h1>
+  <p>﻿한가지 혹은 여러 가지를 선택할 수 있는 사각형의 체크박스를 출력하는 type. 체크박스를 클릭하면 '체크' 표시가 나타난다. </p>
+
+  <h1><li>﻿input type="checkbox" 출력하기</li></h1>
+  <fieldset>
+    <legend>코드</legend>
+    &#60;form&#62;
+      <p class="c1">&#60;input type="checkbox" name="checkbox1" value="check"&#62;check<p>
+      <p class="c1">&#60;input type="checkbox" name="checkbox2" value="box"&#62;box</p>
+      <p class="c1">&#60;input type="checkbox" name="checkbox3" value="print" checked&#62;print</p>
+    &#60;/form&#62;
+  </fieldset><br>
+  <fieldset>
+    <legend>출력 화면</legend>
+    <form>
+      <input type="checkbox" name="checkbox1" value="check">check
+      <input type="checkbox" name="checkbox2" value="box">box
+      <input type="checkbox" name="checkbox3" value="print" checked>print
+    </form>
+  </fieldset>
+  <p>*한번 클릭해보세요!</p>
+
+  <h1><li>&#60;input type="﻿radio"&#62;란?</li></h1>
+  <p>﻿하나만 선택할 수 있는 원형의 체크박스를 출력하는 type. radio 버튼으로 출력할 항목들의 카테고리인 name값을 모두 동일한 항목으로 입력해야 하며, value는 모두 다른 값을 입력해야 한다. value값은 사용자에게 보이지 않지만 submit 버튼을 사용자가 눌렀을때, 어떤 radio 항목을 선택했는지 보여주는 역할을 한다. </p>
+  <p>﻿웹에 출력했을 때 기본으로 선택되어 있는 radio를 출력하려면 &#60;input&#62;tag의 모든 요소를 입력한 다음 마지막에 checked라고 적으면 된다.</p>
+  <h1><li>﻿input type="checkbox" 출력하기</li></h1>
+  <fieldset>
+    <legend>코드</legend>
+    &#60;form&#62;
+      <p class="c1">&#60;input type="radio" name="radio" value="radio"&#62;radio<p>
+      <p class="c1">&#60;input type="radio" name="radio" value="button"&#62;button</p>
+      <p class="c1">&#60;input type="radio" name="radio" value="print" checked&#62;print</p>
+    &#60;/form&#62;
+  </fieldset><br>
+  <fieldset>
+    <legend>출력 화면</legend>
+    <form>
+      <input type="radio" name="radio" value="radio">radio
+      <input type="radio" name="radio" value="button">button
+      <input type="radio" name="radio" value="print" checked>print
+    </form>
+  </fieldset>
+  <p>*한번 클릭해보세요!</p>
+
+</ol>
+</body>
+</html>
