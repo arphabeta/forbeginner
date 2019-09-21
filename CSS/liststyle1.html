@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>list style 1</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <style>
+    .li0{list-style-type: circle;}
+    .li1{list-style-type:disc;}
+    .li2{list-style-type:square;}
+
+    .title{
+      height:50px;
+      font-weight:800;
+      font-size:50px;
+    }
+    h1{
+      border-style:solid;
+      border-width:0 0 5px 0;
+      border-color:blue;
+    }
+    p{
+      text-indent:10px;
+    }
+    .c1{
+      text-indent:30px;
+    }
+    .c2{
+      text-indent:50px;
+    }
+    .c3{
+      text-indent:80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">For Beginner</div>
+<ol>
+  <h1><li>list-style이란?</li></h1>
+  <p>리스트를 출력할 수 있는 &#60;ol&#62;,&#60;ul&#62;태그를 꾸며주는 속성. 리스트를 꾸며줄 수 있는 속성은 아래 3가지가 있다.</p>
+  <p>
+    <ul type="square">
+      <li>list-style-type</li>
+      <li>list-style-position</li>
+      <li>list-style-image</li>
+    </ul>
+  </p>
+  <h1><li>list-style-type이란?</li></h1>
+  <p>리스트를 출력할 수 있는 &#60;ol&#62;, &#60;ul&#62;태그의 모양을 꾸며주는 속성.</p>
+  <h1><li>list-style-type출력하기</li></h1>
+</ol>
+  <ul type="square">
+  <h2><li>&#60;ol&#62;tag list-style-type출력하기</li></h2>
+
+  <ol>
+  <h3><li>list-style-type: circle</li></h3>
+  <fieldset>
+    <legend>코드</legend>
+    <p class="c1">&#60;ol class="li0"&#62;</p>
+      <p class="c2">&#60;li>list-style-type: circle&#60;/li&#62;</p>
+      <p class="c2">&#60;li>list-style-type: circle&#60;/li&#62;</p>
+      <p class="c2">&#60;li>list-style-type: circle&#60;/li&#62;</p>
+    <p class="c1">&#60;/ol&#62;</p>
+  </fieldset>
+  <fieldset>
+    <legend>출력 화면</legend>
+    <ol class="li0">
+      <li>list-style-type: circle</li>
+      <li>list-style-type: circle</li>
+      <li>list-style-type: circle</li>
+    </ol>
+  </fieldset><br>
+
+  <h3><li>list-style-type:disc</li></h3>
+  <fieldset>
+    <legend>코드</legend>
+    <p class="c1">&#60;ol class="li1"&#62;</p>
+      <p class="c2">&#60;li>list-style-type: disc&#60;/li&#62;</p>
+      <p class="c2">&#60;li>list-style-type: disc&#60;/li&#62;</p>
+      <p class="c2">&#60;li>list-style-type: disc&#60;/li&#62;</p>
+    <p class="c1">&#60;/ol&#62;</p>
+  </fieldset>
+  <fieldset>
+    <legend>출력 화면</legend>
+    <ol class="li1">
+      <li>list-style-type:disc</li>
+      <li>list-style-type:disc</li>
+      <li>list-style-type:disc</li>
+    </ol>
+  </fieldset><br>
+
+  <h3><li>list-style-type:square</li></h3>
+  <fieldset>
+    <legend>코드</legend>
+    <p class="c1">&#60;ol class="li2"&#62;</p>
+      <p class="c2">&#60;li>list-style-type: square&#60;/li&#62;</p>
+      <p class="c2">&#60;li>list-style-type: square&#60;/li&#62;</p>
+      <p class="c2">&#60;li>list-style-type: square&#60;/li&#62;</p>
+    <p class="c1">&#60;/ol&#62;</p>
+  </fieldset>
+  <fieldset>
+    <legend>출력 화면</legend>
+    <ol class="li2">
+      <li>list-style-type:square</li>
+      <li>list-style-type:square</li>
+      <li>list-style-type:square</li>
+    </ol>
+  </fieldset><br>
+
+</ol>
+</ul>
+</body>
+</html>
