@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&#60;input type&#62;5</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+      .title{
+        height:50px;
+        font-weight:800;
+        font-size:50px;
+      }
+      h1{
+        border-style:solid;
+        border-width:0 0 5px 0;
+        border-color:blue;
+      }
+      p{
+        text-indent:10px;
+      }
+      .c1{
+        text-indent:30px;
+      }
+      .c2{
+        text-indent:50px;
+      }
+      .big{
+        font-size:20px;
+        font-weight: 700;
+      }
+      .small{
+        color:blue;
+        font-size:12px;
+      }
+      img{
+          width:600px;
+      }
+    </style>
+</head>
+<body>
+  <div class="title">For Beginner</div>
+<ol>
+  <h1><li>&#60;input type="submit"&#62;란?</li></h1>
+  <p>﻿작성되어 있는 모든 값을 핸들러에 제출하는 제출(submit) 버튼을 출력하는 type. "제출"버튼을 클릭하면 양식 데이터가 "/action_page.php"라는 페이지로 전송된다.﻿</p>
+  <p>﻿*핸들러는 일반적으로 입력 데이터를 처리하기위한 스크립트가있는 서버 페이지를 말한다. 양식 핸들러는 &#60;form&#62;태그의 action 속성으로 지정한다.﻿</p>
+
+  <h1><li>﻿input type="submit" 출력하기</li></h1>
+  <fieldset>
+    <legend>코드</legend>
+    <p class="c1">&#60;form action="/action_page.php"&#62;</p>
+      <p class="c2">&#60;input type="submit" value="Submit"&#62;</p>
+    <p class="c1">&#60;/form&#62;</p>
+  </fieldset><br>
+  <fieldset>
+    <legend>출력 화면</legend>
+    <form action="/action_page.php">
+       <input type="submit" value="Submit">
+    </form>
+  </fieldset>
+</ol>
+</body>
+</html>
