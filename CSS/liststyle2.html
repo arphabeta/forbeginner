@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>css4-목록2</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <style>
+    .li0{list-style-type:decimal;}
+    .li1{list-style-type: decimal-leading-zero;}
+
+    .title{
+      height:50px;
+      font-weight:800;
+      font-size:50px;
+    }
+    h1{
+      border-style:solid;
+      border-width:0 0 5px 0;
+      border-color:blue;
+    }
+    p{
+      text-indent:10px;
+    }
+    .c1{
+      text-indent:30px;
+    }
+    .c2{
+      text-indent:50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">For Beginner</div>
+<ol>
+  <h1><li>list-style이란?</li></h1>
+  <p>리스트를 출력할 수 있는 &#60;ol&#62;,&#60;ul&#62;를 꾸며주는 명령어. 리스트를 꾸며줄 수 있는 명령어 속성은 아래 3가지가 있다.</p>
+  <p>
+    <ul type="square">
+      <li>list-style-type</li>
+      <li>list-style-position</li>
+      <li>list-style-image</li>
+    </ul>
+  </p>
+  <h1><li>list-style-type출력하기</li></h1>
+</ol>
+  <ul>
+  <h2><li>&#60;ol&#62;tag list-style-type출력하기</li></h2>
+  <ol>
+    <h3><li>list-style-type: ﻿decimal</li></h3>
+    <ol>
+      <li>﻿&#60;body&#62;tag 안에 들어갈 list를 먼저 입력한다. class="li0"을 생성한다. 여러개의 list를 만들 것이기 때문에 class로 묶어주고 수식해준다.</li>
+  <Br>
+    <fieldset>
+      <legend>HTML 코드</legend>
+      <p class="c1">&#60;ol class="li0"&#62;</p>
+        <p class="c2">&#60;li>list-style-type: decimal&#60;/li&#62;</p>
+        <p class="c2">&#60;li>list-style-type: decimal&#60;/li&#62;</p>
+        <p class="c2">&#60;li>list-style-type: decimal&#60;/li&#62;</p>
+      <p class="c1">&#60;/ol&#62;</p>
+    </fieldset><br>
+
+    <li>&#60;head&#62;태그 안에 &#60;style&#62;태그를 열고 .li0을 수식하는 명령어들을 넣어준다.</li><br>
+      <fieldset>
+        <legend>CSS 코드</legend>
+        <p class="c1">&#60;head&#62;</p>
+        <p class="c1">&#60;style&#62;</p>
+           <p class="c2">.li0{list-style-type: decimal;}</p>
+        <p class="c1">&#60;/style&#62;</p>
+        <p class="c1">&#60;/head&#62;</p>
+      </fieldset><br>
+    <li>저장을 한 후 출력한다.</li> <br>
+    <fieldset>
+      <legend>출력 화면</legend>
+      <ul class="li0">
+        <li>list-style-type: decimal</li>
+        <li>list-style-type: decimal</li>
+        <li>list-style-type: decimal</li>
+      </ul>
+    </fieldset><br></ol>
+
+    <h3><li>list-style-type:decimal-leading-zero</li></h3>
+    <ol>
+      <li>&#60;body&#62;tag 안에 들어갈 list를 먼저 입력한다. class="li1"을 생성한다. 여러개의 list를 만들 것이기 때문에 class로 묶어주고 수식해준다.</li><br>
+    <fieldset>
+      <legend>HTML 코드</legend>
+      <p class="c1">&#60;ol class="li1"&#62;</p>
+        <p class="c2">&#60;li>list-style-type: decimal-leading-zero&#60;/li&#62;</p>
+        <p class="c2">&#60;li>list-style-type: decimal-leading-zero&#60;/li&#62;</p>
+        <p class="c2">&#60;li>list-style-type: decimal-leading-zero&#60;/li&#62;</p>
+      <p class="c1">&#60;/ol&#62;</p>
+    </fieldset><br>
+
+    <li>&#60;head&#62;태그 안에 &#60;style&#62;태그를 열고 .li1을 수식하는 명령어들을 넣어준다.</li><br>
+      <fieldset>
+        <legend>CSS 코드</legend>
+        <p class="c1">&#60;head&#62;</p>
+        <p class="c1">&#60;style&#62;</p>
+           <p class="c2">.li1{list-style-type: decimal-leading-zero;}</p>
+        <p class="c1">&#60;/style&#62;</p>
+        <p class="c1">&#60;/head&#62;</p>
+      </fieldset><br>
+
+      <li>저장을 한 후 출력한다.</li> <br>
+      <fieldset>
+        <legend>출력 화면</legend>
+        <ul class="li1">
+          <li>list-style-type:decimal-leading-zero;</li>
+          <li>list-style-type:decimal-leading-zero;</li>
+          <li>list-style-type:decimal-leading-zero;</li>
+        </ul>
+      </fieldset><br>
+    </ol>
+
+</ol>
+</body>
+</html>
